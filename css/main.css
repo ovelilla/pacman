@@ -1,0 +1,76 @@
+.maze {
+    display: grid;
+    grid-template-columns: repeat(28, min-content);
+    position: relative;
+    width: min-content;
+    background-color: black;
+}
+
+.maze div {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.pac-dot {
+    background-color: white;
+    border: 8px solid black;
+    border-radius: 50%;
+}
+
+.wall {
+    background-color: slateblue;
+}
+
+.power-pellet {
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 50%;
+}
+
+.pac-man {
+    position: absolute;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: top .2s linear, left .2s linear;
+}
+
+.ghost {
+    position: absolute;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.blinky {
+    background-color: red;
+    transition: top .2s linear, left .2s linear;
+}
+
+.inky {
+    background-color: cyan;
+    transition: top .25s linear, left .25s linear;
+}
+
+.pinky {
+    background-color: pink;
+    transition: top .3s linear, left .3s linear;
+}
+
+.clide {
+    background-color: orange;
+    transition: top .35s linear, left .35s linear;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+}
